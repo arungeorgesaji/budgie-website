@@ -1,0 +1,34 @@
+<!doctype html>
+  {% load static %}
+  <hr />
+
+  <head>
+    <title>Profile</title>
+    <link rel="stylesheet" href={% static 'admin/css/styles.css' %} type="text/css" />
+  </head>
+
+  <body>
+    <back>
+      <div class="loginbox">
+        <h1>Login here</h1>
+  
+        <center>
+          <form>
+            <p>Username</p>
+            <input type="text" name="" placeholder="Enter Username" />
+            <p>Password</p>
+            <input type="text" name="" placeholder="Enter password" />
+  
+            <form>
+              <input type="submit" name="" value="Login" />
+            </form>
+            <form><a href="http://127.0.0.1:8000/sign_in/">Dont have an account?</a><br /></form>
+          </form>
+          <form>
+            <form><a href="http://127.0.0.1:8000/lost_password/">Lost your password?</a><br /></form>
+          </form>
+        </center>
+    </back>
+    </div>
+  </body>
+</html>

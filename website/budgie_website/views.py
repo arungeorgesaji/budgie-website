@@ -20,3 +20,18 @@ def guide(request):
 
 def merch(request):
     return render(request, "budgie_website/merch.html", {})
+
+def login(request):
+    return render(request, "budgie_website/login.html", {})
+
+def lost_password(request):
+    return render(request, "budgie_website/lost_password.html", {})
+
+def new_password(request):
+    return render(request, "budgie_website/new_password.html", {})
+
+def otp(request):
+    return render(request, "budgie_website/otp.html", {})
+
+def sign_in(request):
+    return render(request, "budgie_website/sign_in.html", {})   

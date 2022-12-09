@@ -1,24 +1,26 @@
 <!doctype html>
+{% load static %}
     <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<h1></h1>
-
 <style>
-    h1 {
-   text-align: center;
-   text-decoration: underline;
- }
+    h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    text-decoration:underline ;
+}
 </style>
-
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
 integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     </head>
 
     <body>
-        {% load static %} <img src="{% static "budgie_website/media/banner.png" %}" width = "1370">
+        <img src="{% static "budgie_website/media/banner.png" %}" width = "1370">
         <button type="button" class="btn btn-link">
-            <a href="http://127.0.0.1:8000/profile/"  data-inline="true" >profile</a></button>
+            <a href="http://127.0.0.1:8000/login/"  data-inline="true" >profile</a></button>
         <button type="button" class="btn btn-link">
             <a href="http://127.0.0.1:8000/guide/" data-inline="true">guide</a></button>
         <button type="button" class="btn btn-link">

@@ -117,10 +117,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = "static/"
-
+STATIC_ROOT = os.path.join(BASE_DIR,"deploy_to_server")
+STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / "budgie_website/templates/budgie_website/static/static",
+    os.path.join(BASE_DIR, 'static'),
 ]
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
