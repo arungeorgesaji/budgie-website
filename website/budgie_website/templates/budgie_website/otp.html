@@ -1,0 +1,19 @@
+<html>
+  {% load static %}
+  <head>
+    <title>OTP</title>
+    <link rel="stylesheet" href={% static 'admin/css/otp_styles.css' %} type="text/css" />
+    <body>
+      <div class="loginbox">
+        <img src="{% static "budgie_website/media/avatar.png" %}" class="avatar" />
+        <h1>Type the OTP we send to your email</h1>
+
+        <form action="http://127.0.0.1:8000/new_password/"> 
+          <p>OTP</p>
+          <input type="text" name="" placeholder="Type OTP" /><br><br>
+            <input type="submit" name="" value="submit" />
+        </form>
+      </div>
+    </body>
+  </head>
+</html>
