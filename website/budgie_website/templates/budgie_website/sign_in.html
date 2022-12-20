@@ -8,15 +8,22 @@
         <img src="{% static "budgie_website/media/avatar.png" %}" class="avatar" />
         <h1>Resister your account here</h1>
 
-        <form action="http://127.0.0.1:8000/login/">
+        <form method="post" action="http://127.0.0.1:8000/sign_in/">
+          {% csrf_token %}
           <p>Username</p>
-          <input type="text" name="" placeholder="Enter Username" />
+          <input type="text" id="username" name="username" placeholder="Enter Username" Required/>
+          <p>email</p>
+          <input type="text" id="confirm" name="email" placeholder="Enter email" Required/>
           <p>password</p>
-          <input type="password" name="" placeholder="Enter password" />
-          <p>password</p>
-          <input type="password" name="" placeholder="Confirm password" />
+          <input type="password" id=password name="password" placeholder="Enter password" Required/>
           <p>Submit</p><br>
-          <input type="submit" name="" value="Register Account" />
+
+           {% for message in messages %}   
+           <div class="alert alert-{{message.tags}} alert-dismissable fade show" role="alert"></div>
+           &emsp;&emsp;{{message}}
+           {% endfor %}
+           
+          <input type="submit" id="confirm" name="confirm" value="Register Account" />
           <a href="http://127.0.0.1:8000/login/">Already have an account?</a>
         </form>
      </div>
